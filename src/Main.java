@@ -1,6 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
+
     // Задача 1
     System.out.println("\t\nЗадача №1\n");
     int[] intArray = new int[3];
@@ -20,9 +21,27 @@ void main() {
 
     // Задача 3
     System.out.println("\t\nЗадача №3\n");
-    printArrayReverse(intArray);
-    printArrayReverse(doubleArray);
-    printArrayReverse(arbitraryArray);
+
+    // Первый массив (целочисленный)
+    for (int i = intArray.length - 1; i >= 0; i--) {
+        System.out.print(intArray[i]);
+        if (i > 0) System.out.print(", ");
+    }
+    System.out.println();
+
+    // Второй массив (дробный)
+    for (int i = doubleArray.length - 1; i >= 0; i--) {
+        System.out.print(doubleArray[i]);
+        if (i > 0) System.out.print(", ");
+    }
+    System.out.println();
+
+    // Третий массив (произвольный)
+    for (int i = arbitraryArray.length - 1; i >= 0; i--) {
+        System.out.print(arbitraryArray[i]);
+        if (i > 0) System.out.print(", ");
+    }
+    System.out.println();
 
     // Задача 4
     System.out.println("\t\nЗадача №4\n");
